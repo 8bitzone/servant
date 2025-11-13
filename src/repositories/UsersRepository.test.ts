@@ -1,9 +1,9 @@
 import "reflect-metadata";
 import "dotenv/config";
 import { afterEach, beforeEach, describe, it } from "node:test";
-import { usersTable, User } from "../db/schema";
-import { DrizzleConnection } from "../repositories/BaseRepository";
-import { UsersRepository } from "../repositories/UsersRepository";
+import { usersTable, User } from "../db/schema.js";
+import { DrizzleConnection } from "../repositories/BaseRepository.js";
+import { UsersRepository } from "../repositories/UsersRepository.js";
 import { migrate } from "drizzle-orm/libsql/migrator";
 import { drizzle } from "drizzle-orm/libsql";
 import { container } from "tsyringe";
