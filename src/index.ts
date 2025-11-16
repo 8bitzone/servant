@@ -2,8 +2,8 @@
  * Servant, um bom simples de moderação
  * Nosso foco é entregar recursos e comandos personalizados, e isso reflete ao nosso código.
  *
- * Nosso servidor: /qTgfcN6ct7
- * Por: Alfheim Team
+ * Nosso servidor: /aqNVrABPeW
+ * Por: Aeternus team
  */
 import "reflect-metadata";
 import "dotenv/config";
@@ -36,6 +36,7 @@ container.register<UsersRepository>(UsersRepository, {
 const client = new Client({
     intents: [
         GatewayIntentBits.Guilds,
+	GatewayIntentBits.GuildMembers,
         GatewayIntentBits.GuildMessages,
         GatewayIntentBits.MessageContent,
     ],
