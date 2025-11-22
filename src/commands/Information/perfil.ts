@@ -24,9 +24,7 @@ export default class InfoCommand {
         member: GuildMember | APIInteractionGuildMember | undefined,
         interaction: CommandInteraction,
     ): Promise<void> {
-        member ??= await interaction.guild?.members.fetch(
-            interaction?.user.id,
-            );
+        member ??= await interaction.guild?.members.fetch(interaction?.user.id);
         if (member instanceof GuildMember)
             interaction.reply(
                 `### Informações de ${member.user.username}\n\`ID\`: ${member?.id}\n\n\`Entrou em\`:\n${member?.joinedAt?.toLocaleDateString("pt-br")}\n\`Criou em\`:\n${member?.user.createdAt.toLocaleDateString("pt-br")}\n`,

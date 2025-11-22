@@ -20,10 +20,10 @@ export abstract class BaseRepository<TTable extends SQLiteTable<TableConfig>> {
     async create(
         data: InferInsertModel<TTable>,
     ): Promise<InferSelectModel<TTable>[]> {
-        throw new Error("Method not implemented.");
+        throw new Error(`Method not implemented.\n${data}`);
     }
 
     async findById(id: string): Promise<InferSelectModel<TTable>[]> {
-        throw new Error("Method not implemented.");
+        throw new Error(`Method not implemented.\n${id}`);
     }
 }
