@@ -1,5 +1,5 @@
 # :gem: Servant
-
+Bot de moderação e gestão focado no servidor da HellZ (apenas quando necessário).
 ## Sobre o bot
 A ideia dessa aplicação é oferecer soluções e recursos para nosso servidor de forma privada, porém, aberto para participação e servir de base. Caso tenha sugestões, ideias ou percebeu problemas em nosso algoritmo fique livre para participar do projeto.
 
